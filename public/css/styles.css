@@ -1,0 +1,215 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.card {
+    background-color: rgb(4 103 116);
+    box-shadow: 0 4px 8px 0 rgb(43 44 39);
+    /* transition: 0.3s; */
+    padding: 20px;
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card a {
+    text-decoration: none;
+    color: rgb(215 217 203);
+    cursor: pointer;
+  }
+  .card header {
+    padding: 10px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(32, 56, 100, 0.993);
+  }
+  .usernameAndDate,
+  .card h2 {
+    padding: 5px;
+    text-align: center;
+  }
+  .card p,
+  .card h3 {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #CommentHeader {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  nav a {
+    padding: 11px;
+    text-decoration: none;
+    color: rgb(215 217 203);
+    font-size: 49px;
+    font-family: 'Montserrat', sans-serif;
+    text-emphasis-style: triangle;
+  }
+  nav {
+    padding: 65px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(4, 103, 116);
+  }
+  nav button {
+    background: none;
+    border: none;
+    color: rgb(119, 101, 197);
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+  h1 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  form p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+  textarea {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form button {
+    align-items: center;
+  }
+  #username-login,
+  #password-login,
+  #username-signup,
+  #password-signup {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  label {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .form-group {
+    display: flex;
+    justify-content: center;
+  }
+  .form-group button {
+    /* remove default behavior */
+    appearance: none;
+    -webkit-appearance: none;
+    background: #046774;
+  
+    /* usual styles */
+    padding: 10px;
+    border: none;
+    background-color: rgb(111, 111, 111);
+    color: #fff;
+    font-weight: 100;
+    background: rgb(4 103 116);
+    border-radius: 14px;
+    width: 50%;
+  }
+  .login-card a {
+    padding-top: 10px;
+  
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+  .button-link {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: rgb(36, 36, 36);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 40px;
+  }
+  .centeredText {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 40px;
+  }
+  .loginMessage {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+  
+  #updatingPost input[type="text"],
+  #newPost input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  .editBtn,
+  #createPostbutton,
+  #commentButton {
+    display: flex;
+    justify-content: center;
+  }
+  .contentBox,
+  #commentText {
+    height: 6%;
+    display: block;
+    width: 100%;
+  }
+  .editBtn button,
+  #createPostbutton button,
+  #postBtn {
+    
+    display: block;
+    width: 100%;
+    background: rgb(111, 111, 111);
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+  }
+  .onePost {
+    background-color: rgb(4, 103, 116);
+    color: rgb(213 215 201);
+  }
+  #spanForDashboard{
+    float: right;
+  }
+  @media screen and (min-width: 768px) {
+    .usernameAndDate {
+      float: right;
+    }
+    .usernameAndDate,
+    .card h2 {
+      padding: 0;
+      display: inline;
+    }
+    .card p {
+      
+      text-align: center;
+      padding: 15px;
+    }
+  }
