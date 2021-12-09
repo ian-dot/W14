@@ -1,0 +1,36 @@
+{{#if loggedIn}}
+
+  <section class="card">
+    <form data-postId="{{post.id}}" id="updatingPost">
+      <header class="centeredText">Edit Post</header>
+ 
+
+        <p>Title</p>
+        <input type="text" id="titleInput" value="{{post.title}}" />
+
+        <p>Content</p>
+      <!--  <input type="text" id="contentInput" class = "contentBox" value="{{post.content}}" /> -->
+ <textarea
+        name="commentText"
+        id="contentInput"
+        class="contentBox"
+        cols="100"
+        rows="10"
+
+      >{{post.content}}</textarea>
+      <br>
+  <div class="editBtn">
+      <button id="updatePostBtn" >Update Post</button>
+      </div>
+      <div class="editBtn">
+      <button id="deletePostBtn" >Delete</button>
+      </div>
+    </form>
+  </section>
+ 
+{{else}}
+  <a href="/login" class= "loginMessage">You must login first to view this page</a>
+{{/if}}
+
+<script src="/js/editPost.js"></script>
+<script src="/js/deletePost.js"></script>
